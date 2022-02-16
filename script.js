@@ -48,7 +48,7 @@ setInterval(()=>{
     offsetX = Math.abs(dx-ox);
     offsetY = Math.abs(dy-oy);
 
-    if(offsetX<90 && offsetY<50  && !g_Over){
+    if(offsetX<70 && offsetY<50  && !g_Over){
         g_Over = true;
         gameOver.innerHTML = "Game Over!";
         gameOver.classList.add('gameani');
@@ -66,7 +66,7 @@ setInterval(()=>{
             overAudio.pause();
         },1870);
         music.pause();
-    }else if(offsetX<120 && cross && !g_Over){
+    }else if(offsetX<40 && cross && !g_Over){
         score +=1;
         updateScore(score);
         cross = false;
